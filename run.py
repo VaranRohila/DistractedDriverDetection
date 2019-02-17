@@ -45,6 +45,7 @@ def load_image(path, rows=None, cols=None, gray=True):
     return img
 
 def load_model():
+	"""Loades model from file."""
 	# load json and create model
 	json_file = open('Model/model.json', 'r')
 	loaded_model_json = json_file.read()
